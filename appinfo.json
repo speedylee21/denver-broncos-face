@@ -1,0 +1,34 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "Cassandra Crawford",
+    "longName": "Denver Broncos Digital",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/denver_broncos_logo.png",
+                "menuIcon": true,
+                "name": "DENVER_BRONCOS_LOGO",
+                "targetPlatforms": [
+                    "aplite",
+                    "basalt"
+                ],
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Broncos",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "1716fd40-a2eb-4d19-82ce-6fa20dabde91",
+    "versionLabel": "1.1",
+    "watchapp": {
+        "watchface": true
+    }
+}
