@@ -75,7 +75,7 @@ static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
 }
 
 static void window_load(Window *window) {
-  
+  //light_enable(true);
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_frame(window_layer);
   s_image = gbitmap_create_with_resource(RESOURCE_ID_DENVER_BRONCOS_LOGO);
@@ -91,7 +91,7 @@ static void window_load(Window *window) {
   s_time_layer = layer_create(layer_get_bounds(window_get_root_layer(s_window)));
   layer_add_child(bitmap_layer_get_layer(s_image_layer), s_time_layer);
   
-  s_digits_label = text_layer_create(GRect(20, 5, 90, 32));
+  s_digits_label = text_layer_create(GRect(20, 5, 100, 32));
   text_layer_set_background_color(s_digits_label, GColorClear);
   text_layer_set_text_color(s_digits_label, GColorWhite);
   text_layer_set_font(s_digits_label, fonts_get_system_font(FONT_KEY_GOTHIC_28_BOLD));
@@ -100,7 +100,7 @@ static void window_load(Window *window) {
   
   layer_add_child(s_time_layer, text_layer_get_layer(s_digits_label));
   
-  s_ampm_label = text_layer_create(GRect(110, 10, 50, 32));
+  s_ampm_label = text_layer_create(GRect(120, 10, 24, 32));
   text_layer_set_background_color(s_ampm_label, GColorClear);
   text_layer_set_text_color(s_ampm_label, GColorWhite);
   text_layer_set_font(s_ampm_label, fonts_get_system_font(FONT_KEY_GOTHIC_18));
